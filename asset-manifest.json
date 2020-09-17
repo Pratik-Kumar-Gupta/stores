@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Pratik-Kumar-Gupta/stores/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/Pratik-Kumar-Gupta/stores/static/js/main.5f7b526f.chunk.js",
-    "main.js.map": "/Pratik-Kumar-Gupta/stores/static/js/main.5f7b526f.chunk.js.map",
-    "runtime-main.js": "/Pratik-Kumar-Gupta/stores/static/js/runtime-main.3be9a2c0.js",
-    "runtime-main.js.map": "/Pratik-Kumar-Gupta/stores/static/js/runtime-main.3be9a2c0.js.map",
-    "static/css/2.8aa5a7f8.chunk.css": "/Pratik-Kumar-Gupta/stores/static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.14184101.chunk.js": "/Pratik-Kumar-Gupta/stores/static/js/2.14184101.chunk.js",
-    "static/js/2.14184101.chunk.js.map": "/Pratik-Kumar-Gupta/stores/static/js/2.14184101.chunk.js.map",
-    "index.html": "/Pratik-Kumar-Gupta/stores/index.html",
-    "precache-manifest.ef2c9bd7cedb90e507f68879e2483029.js": "/Pratik-Kumar-Gupta/stores/precache-manifest.ef2c9bd7cedb90e507f68879e2483029.js",
-    "service-worker.js": "/Pratik-Kumar-Gupta/stores/service-worker.js",
-    "static/css/2.8aa5a7f8.chunk.css.map": "/Pratik-Kumar-Gupta/stores/static/css/2.8aa5a7f8.chunk.css.map",
-    "static/css/main.5ecd60fb.chunk.css.map": "/Pratik-Kumar-Gupta/stores/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.14184101.chunk.js.LICENSE.txt": "/Pratik-Kumar-Gupta/stores/static/js/2.14184101.chunk.js.LICENSE.txt"
+    "main.css": "/stores/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/stores/static/js/main.7f65fa70.chunk.js",
+    "main.js.map": "/stores/static/js/main.7f65fa70.chunk.js.map",
+    "runtime-main.js": "/stores/static/js/runtime-main.2c2772a2.js",
+    "runtime-main.js.map": "/stores/static/js/runtime-main.2c2772a2.js.map",
+    "static/css/2.8aa5a7f8.chunk.css": "/stores/static/css/2.8aa5a7f8.chunk.css",
+    "static/js/2.14184101.chunk.js": "/stores/static/js/2.14184101.chunk.js",
+    "static/js/2.14184101.chunk.js.map": "/stores/static/js/2.14184101.chunk.js.map",
+    "index.html": "/stores/index.html",
+    "precache-manifest.3bd8d8717e69c52561abef9014bc2fe3.js": "/stores/precache-manifest.3bd8d8717e69c52561abef9014bc2fe3.js",
+    "service-worker.js": "/stores/service-worker.js",
+    "static/css/2.8aa5a7f8.chunk.css.map": "/stores/static/css/2.8aa5a7f8.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "/stores/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.14184101.chunk.js.LICENSE.txt": "/stores/static/js/2.14184101.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.3be9a2c0.js",
+    "static/js/runtime-main.2c2772a2.js",
     "static/css/2.8aa5a7f8.chunk.css",
     "static/js/2.14184101.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.5f7b526f.chunk.js"
+    "static/js/main.7f65fa70.chunk.js"
   ]
 }
