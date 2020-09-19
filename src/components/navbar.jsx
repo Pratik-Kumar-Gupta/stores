@@ -1,16 +1,18 @@
 import React, { Component } from "react";
 
 class Navbar extends Component {
-  state = {};
+  state = {
+    count: 0,
+  };
   render() {
     return (
       <React.Fragment>
         <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
           <a className="navbar-brand" href="#">
-            Gupta Stores
+            Pratik Gupta
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarTogglerDemo02"
@@ -28,23 +30,24 @@ class Navbar extends Component {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Orders
-                </a>
+                <a className="nav-link" href="#"></a>
               </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input
+            <form className="form-inline my-2 my-lg-0">
+              {/* <input
                 className="form-control mr-sm-2"
                 type="search"
                 placeholder="Search"
-              />
+              /> */}
               <button
-                className="btn btn-outline-success my-2 my-sm-0"
+                className="btn btn-outline-success my-2 my-sm-0 m-2"
                 type="submit"
               >
-                Search
+                Cart Items Count
               </button>
+              <span className="badge badge-warning">
+                {this.props.totalcounters}
+              </span>
             </form>
           </div>
         </nav>
