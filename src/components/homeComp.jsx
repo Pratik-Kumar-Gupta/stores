@@ -39,7 +39,12 @@ class HomeComp extends Component {
                 >
                   Add Item
                 </button>
-                <button className="btn btn-danger m-2">Delete Item</button>
+                <button
+                  className="btn btn-danger m-2"
+                  onClick={() => this.props.onDelete(items.id)}
+                >
+                  Delete Item
+                </button>
                 <span className="badge badge-warning">Qty : {items.value}</span>
               </div>
             </div>

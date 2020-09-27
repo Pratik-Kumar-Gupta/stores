@@ -12,6 +12,7 @@ class DesComp extends Component {
             Clicking on Add item will increment the qty in qty span as well as
             navbar
           </li>
+          <li>Clicking of Delete item will delete the items from the page</li>
         </div>
       </React.Fragment>
     );

@@ -34,10 +34,26 @@ class App extends Component {
   };
   handleIncrement = (counter) => {
     const shopping_items = [...this.state.shopping_items];
+    console.log("new shopping array", shopping_items);
     const index = shopping_items.indexOf(counter);
+    console.log("index of clicked item", index);
     shopping_items[index] = { ...counter };
     shopping_items[index].value++;
-    console.log(this.state.shopping_items[index]);
+    this.setState({ shopping_items });
+    // counter contains the item details clicked [add item button] in homeCompinet
+    // copy the the shopping_items array to a new array as below
+    // get the index value of the item clicked in homecomp from counter
+    //console.log("copy shopping_items[index] from counter", { ...counter });
+    //console.log("shopping index ", shopping_items[index]);
+    // console.log("incremented value", shopping_items[index].value++);
+    // console.log(this.state.shopping_items[index]);
+  };
+  handleDecrement = (item_id) => {
+    console.log("item id to be deleted", item_id);
+    //const counters = this.state.counters.filter((c) => c.id !== counterId);
+    const shopping_items = this.state.shopping_items.filter(
+      (item) => item.id !== item_id
+    );
     this.setState({ shopping_items });
   };
   render() {
@@ -53,6 +69,7 @@ class App extends Component {
             <HomeComp
               shopping_items={this.state.shopping_items}
               onIncrement={this.handleIncrement}
+              onDelete={this.handleDecrement}
             />
           </div>
         </div>
