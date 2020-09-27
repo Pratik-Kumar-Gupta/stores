@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   state = {
@@ -9,7 +10,7 @@ class Navbar extends Component {
       <React.Fragment>
         <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
           <a className="navbar-brand" href="#">
-            Pratik Gupta
+            Simple React App
           </a>
           <button
             className="navbar-toggler"
@@ -24,14 +25,16 @@ class Navbar extends Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li className="nav-item active">
-                <a className="nav-link" href="#">
-                  Home <span className="sr-only">(current)</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#"></a>
-              </li>
+              <Link to="/">
+                <li className="nav-item active nav-link">
+                  Profile <span className="sr-only">(current)</span>
+                </li>
+              </Link>
+              <Link to="/homeComp">
+                <li className="nav-item active nav-link">
+                  Shopping Cart <span className="sr-only">(current)</span>
+                </li>
+              </Link>
             </ul>
             <form className="form-inline my-2 my-lg-0">
               <button

@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import Navbar from "./components/navbar";
 import HomeComp from "./components/homeComp";
+import DescComp from "./components/desComp";
+import Profile from "./components/profileComp";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import DesComp from "./components/desComp";
 
 class App extends Component {
@@ -59,21 +62,36 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Navbar
-          totalcounters={
-            this.state.shopping_items.filter((c) => c.value > 0).length
-          }
-        />
-        <div className="container-fluid" style={{ marginTop: "30px" }}>
-          <div className="col-sm-12">
-            <HomeComp
-              shopping_items={this.state.shopping_items}
-              onIncrement={this.handleIncrement}
-              onDelete={this.handleDecrement}
-            />
+        <Router>
+          <Navbar
+            totalcounters={
+              this.state.shopping_items.filter((c) => c.value > 0).length
+            }
+          />
+          <div className="container-fluid">
+            <div className="col-sm-12">
+              <Switch>
+                <Route exact path="/" component={Profile} />
+                <Route
+                  exact
+                  path="/homeComp"
+                  component={() => (
+                    <HomeComp
+                      shopping_items={this.state.shopping_items}
+                      onIncrement={this.handleIncrement}
+                      onDelete={this.handleDecrement}
+                    />
+                  )}
+                />
+              </Switch>
+              {/* <HomeComp
+                shopping_items={this.state.shopping_items}
+                onIncrement={this.handleIncrement}
+                onDelete={this.handleDecrement}
+              /> */}
+            </div>
           </div>
-        </div>
-        <DesComp />
+        </Router>
       </React.Fragment>
     );
   }
