@@ -25,12 +25,12 @@ class Navbar extends Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-              <Link to="/">
+              <Link to="/profile">
                 <li className="nav-item active nav-link">
                   Profile <span className="sr-only">(current)</span>
                 </li>
               </Link>
-              <Link to="/homeComp">
+              <Link to="/stores">
                 <li className="nav-item active nav-link">
                   Shopping Cart <span className="sr-only">(current)</span>
                 </li>

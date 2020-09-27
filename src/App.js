@@ -71,10 +71,10 @@ class App extends Component {
           <div className="container-fluid">
             <div className="col-sm-12">
               <Switch>
-                <Route exact path="/" component={Profile} />
+                <Route exact path="/profile" component={Profile} />
                 <Route
                   exact
-                  path="/homeComp"
+                  path="/stores"
                   component={() => (
                     <HomeComp
                       shopping_items={this.state.shopping_items}
