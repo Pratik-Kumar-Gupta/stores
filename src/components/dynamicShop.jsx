@@ -1,4 +1,3 @@
-import { wait } from "@testing-library/react";
 import React, { Component, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 

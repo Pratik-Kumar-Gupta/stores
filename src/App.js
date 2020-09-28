@@ -88,11 +88,6 @@ class App extends Component {
                 <Route exact path="/dynamicshop" component={DynamicShop} />
                 <Route exact path="/dynamicshop/:id" component={ItemDetails} />
               </Switch>
-              {/* <HomeComp
-                shopping_items={this.state.shopping_items}
-                onIncrement={this.handleIncrement}
-                onDelete={this.handleDecrement}
-              /> */}
             </div>
           </div>
         </Router>

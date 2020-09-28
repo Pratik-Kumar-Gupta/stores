@@ -17,10 +17,6 @@ function ItemDetails({ match }) {
     console.log(item);
   };
   return (
-    // <div>
-    //   <h2>item {item.id}</h2>
-    //   ,<img src={item.image} alt="" />
-    // </div>
     <React.Fragment>
       <br />
       <div className="container-fluid">
