@@ -5,6 +5,8 @@ import DescComp from "./components/desComp";
 import Profile from "./components/profileComp";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import DesComp from "./components/desComp";
+import DynamicShop from "./components/dynamicShop";
+import ItemDetails from "./components/itemDetails";
 
 class App extends Component {
   state = {
@@ -83,6 +85,8 @@ class App extends Component {
                     />
                   )}
                 />
+                <Route exact path="/dynamicshop" component={DynamicShop} />
+                <Route exact path="/dynamicshop/:id" component={ItemDetails} />
               </Switch>
               {/* <HomeComp
                 shopping_items={this.state.shopping_items}

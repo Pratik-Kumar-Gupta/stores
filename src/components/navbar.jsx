@@ -35,6 +35,11 @@ class Navbar extends Component {
                   Shopping Cart <span className="sr-only">(current)</span>
                 </li>
               </Link>
+              <Link to="/dynamicshop">
+                <li className="nav-item active nav-link">
+                  Dynamic Shop <span className="sr-only">(current)</span>
+                </li>
+              </Link>
             </ul>
             <form className="form-inline my-2 my-lg-0">
               <button

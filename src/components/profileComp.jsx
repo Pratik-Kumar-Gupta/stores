@@ -46,7 +46,20 @@ class Profile extends Component {
           <div className=" col-sm-5 jumbotron m-1">
             <h3>Simple React Application</h3>
             <bold>
-              <i>This Application demonstrates a simple cart functionality </i>
+              <i>This Application demonstrates a simple React Application </i>
+              <br />
+              <br />
+              <h5>
+                It Demonstrates simple cart functionality and dynamic data fetch
+              </h5>
+              <li>
+                Clicking on Add item will increment the qty in qty span as well
+                as navbar
+              </li>
+              <li>
+                Clicking of Delete item will delete the items from the page
+              </li>
+              <li>fetching of data dynamically </li>
             </bold>
           </div>
         </div>
